@@ -1,7 +1,15 @@
 .container{
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   &--header-upper{
 
+  }
+  &--header-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }

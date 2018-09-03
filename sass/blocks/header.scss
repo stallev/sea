@@ -1,4 +1,14 @@
 .header{
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__choosing-link{
+    margin-bottom: 50px;
+    padding: 20px 30px;
+    сolor: #fff;
+    background-color: #33c7fd;
+  }
 
 }
 .header__upper{

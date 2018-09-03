@@ -81,7 +81,7 @@ gulp.task('serve', ['style'], function() {
     ui: false
   });
   
-  gulp.watch('sass/**/*.{scss,sass}', ['style']);
+  gulp.watch('sass/**/*.{scss,sass}', ['style']).on('change', server.reload);
   gulp.watch('*.html', ['copyHtml']);
   gulp.watch('build/*.html').on('change', server.reload);
 });
