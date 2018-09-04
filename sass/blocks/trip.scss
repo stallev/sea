@@ -1,11 +1,49 @@
 .trip{
-  
+  &__title{
+    margin: 0;
+  }
+  &__title-link{
+    color: #00a2dd;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.9px;
+  }
 }
-.trip__route-name{
+.trip__content{
   margin: 10px 0;
+  color: #0d3351;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+.trip__route-name,
+.trip__duration-name{
+  font-weight: bold;
 }
 .trip__duration,
 .trip__current-price,
 .trip__route{
   margin: 0;
+}
+.trip__current-price{
+  color: #0d3351;
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.5px;
+}
+.trip__old-price{
+  opacity: 0.55;
+  color: #0d3351;
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  text-decoration: line-through;
+  letter-spacing: 0.9px;
 }
