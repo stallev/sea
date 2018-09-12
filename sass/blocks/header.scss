@@ -14,14 +14,21 @@
 }
 .header__toggle{
   padding-top: 10px;
-  &-button--hamburger{
+  &-button{
     width: 22px;
     height: 16px;
-    background-image: url("../img/hamburger.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    &--hamburger{
+      background-image: url("../img/hamburger.png");
+    }
+    &--cross{
+      display: none;
+      background-image: url("../img/cross.png");
+    }
   }
+
 }
 @media (max-width: $toast-breakpoint-small) {
 }

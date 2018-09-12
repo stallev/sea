@@ -1,7 +1,7 @@
 .social{
   display: flex;
   flex-direction: column;
-  padding-right: 500px;
+  padding-right: 400px;
   &__slogan{
     margin-bottom: 20px;
   }
@@ -11,6 +11,7 @@
   &__link{
     display: block;
     box-sizing: border-box;
+    margin-right: 10px;
     width: 30px;
     height: 30px;
     border: 1px solid rebeccapurple;

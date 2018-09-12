@@ -12,3 +12,10 @@ button{
   border-color: transparent;
   border-style: none;
 }
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul>li{
+  list-style-type: none;
+}
