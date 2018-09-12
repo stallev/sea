@@ -1,18 +1,61 @@
 .trip{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  margin-bottom: 29px;
   &__title{
     margin: 0;
+    padding-left: 30px;
   }
   &__title-link{
     color: #00a2dd;
     font-family: "Roboto Slab";
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 48px;
     letter-spacing: 0.9px;
+  }
+  &--discount, &--stock{
+    &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      z-index: 2;
+      top: 1px;
+      right: 46px;
+      border-bottom: 20px solid transparent;
+      border-top: 80px solid #e30613;
+      border-left: 45px solid #e30613;
+      border-right: 45px solid #e30613;
+    }
+    &::after{
+      position: relative;
+      z-index: 3;
+      right: -440px;
+      bottom: 264px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+  &--discount{
+    &::after{
+      content: "скидка 10%";
+    }
+  }
+  &--stock{
+    &::after{
+      content: "акция";
+    }
   }
 }
 .trip__content{
   margin: 10px 0;
+  padding-left: 30px;
   color: #0d3351;
   font-family: Raleway;
   font-size: 14px;
@@ -28,6 +71,9 @@
 .trip__current-price,
 .trip__route{
   margin: 0;
+}
+.trip__duration{
+  margin-bottom: 10px;
 }
 .trip__current-price{
   color: #0d3351;

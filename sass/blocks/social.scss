@@ -1,0 +1,35 @@
+.social{
+  display: flex;
+  flex-direction: column;
+  padding-right: 500px;
+  &__slogan{
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+  }
+  &__link{
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rebeccapurple;
+    border-radius: 50%;
+    background-color: #0d3351;
+    background-position: 54% 60%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    &--vk{
+      background-image: url("../img/vk_icon.png");
+    }
+    &--ok{
+      background-image: url("../img/ok_icon.png");
+    }
+    &--yt{
+      background-image: url("../img/yt_icon.png");
+    }
+    &--instagram{
+      background-image: url("../img/insta_icon.png");
+    }
+  }
+}
