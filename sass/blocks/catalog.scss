@@ -27,7 +27,7 @@
     z-index: 2;
     width: 55px;
     top: -300px;
-    right: 99px;
+    right: 150px;
     height: 298px;
     background-image: url("../img/snake.png");
     background-size: cover;
@@ -64,6 +64,6 @@
     justify-content: space-between;
     flex-wrap: wrap;*/
     column-count: 2;
-    margin-bottom: 30px;
+    column-gap: 1;
   }
 }

@@ -1,8 +1,7 @@
 .trip{
   position: relative;
-  display: inline-block;
-  height: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 38px;
+
   &__title{
     margin: 0;
     padding-left: 30px;
@@ -26,13 +25,13 @@
       border-left: 4px solid #00a2dd;
     }
   }
-  &--discount, &--stock{
+  &--discount, &--stock, &--sales-hit{
     &::before{
       position: absolute;
       content: "";
       display: block;
       z-index: 2;
-      top: 1px;
+      top: -15px;
       right: 46px;
       border-bottom: 20px solid transparent;
       border-top: 80px solid #e30613;
@@ -41,9 +40,12 @@
     }
     &::after{
       position: absolute;
+      width: 69px;
+      height: 54px;
+      position: absolute;
       z-index: 3;
-      right: -440px;
-      bottom: 264px;
+      right: 59px;
+      bottom: 218px;
       text-transform: uppercase;
       text-align: center;
       color: #ffffff;
@@ -60,7 +62,19 @@
   }
   &--stock{
     &::after{
-      content: "акция";
+      content: "акция 10%";
+    }
+  }
+  &--sales-hit{
+    &::before{
+      border-bottom: 20px solid transparent;
+      border-top: 80px solid #33c7fd;
+      border-left: 45px solid #33c7fd;
+      border-right: 45px solid #33c7fd;
+    }
+    &::after{
+      content: "хит продаж";
+      top: 10px;
     }
   }
 }
